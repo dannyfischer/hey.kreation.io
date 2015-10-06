@@ -1,0 +1,51 @@
+---
+title: Kreation Community - Hey Designer & Entwickler
+---
+
+<header class="hero">
+  <div class="wrapper wrapper--hero">
+    <a href="/" title="Kreation.io" class="site-logo">
+      <svg class="icon icon--logo"><use xlink:href="#shape--logo"></use></svg>
+    </a>
+    <h1 class="lead"><%= data.content.headline %></h1>
+    <h2 class="subline"><%= data.content.subline %></h2>
+    <a href="https://kreation.io" title="Kreation Community" class="button"><%= data.content.button %></a>
+  </div>
+</header>
+
+<section class="part part--intro">
+  <div class="wrapper">
+    <h3 class="heading"><%= data.content.about_title %></h3>
+    <p class="description"><%= data.content.about_more %></p>
+  </div>
+  <img class="preview-image" src="/assets/img/browser-community.png" alt="Community Preview" draggable="false">
+</section>
+
+<section class="part part--community" id="community">
+  <!-- React Community Module * * https://github.com/DannyFischer/react-community-module -->
+</section>
+
+<section class="part">
+  <ul class="wrapper wrapper--about-list">
+    <% data.content.sections.each do |section| %>
+      <li class="about__item">
+        <svg class="icon icon--category">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape--<%= section.symbol %>"></use>
+        </svg>
+        <h3 class="heading"><%= section.title %></h3>
+        <p class="description"><%= section.description %></p>
+      </li>
+    <% end %>
+  </ul>
+  <div class="about-action-list">
+    <a href="https://kreation.io" title="Kreation Community" class="button button--footer"><%= data.content.button_footer %></a>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <svg class="icon icon--logo-square">
+    <use xlink:href="#shape--logo-square"></use>
+  </svg>
+  <a href="https://danny.fm" title="Danny Fischer" class="credit">Ein Projekt von <svg class="icon icon--self"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape--danny"></use></svg> Danny Fischer</a>
+</footer>

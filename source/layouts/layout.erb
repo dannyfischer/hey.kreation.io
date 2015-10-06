@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title><%= current_page.data.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hey! Wir sind die Kreation Community, das Forum für Designer und Entwickler."/>
+    <link rel="icon" type="image/png" href="https://kreation.io/uploads/favicon.png">
+    <% if build? %>
+      <%= stylesheet_inline_tag "main" %>
+    <% else %>
+      <%= stylesheet_link_tag "main" %>
+    <% end %>
+  </head>
+
+  <body>
+    <%= partial "partials/svg" %>
+    <%= yield %>
+    <script src="/assets/js/app.js" async defer></script>
+  </body>
+</html>

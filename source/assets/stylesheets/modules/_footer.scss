@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+
+.site-footer {
+  width: 100%;
+  padding-top: $scale5;
+  background-color: $brand-black;
+  text-align: center;
+  border-top: 1px solid #000;
+}
+
+.credit {
+  display: inline-block;
+  margin-top: $scale5;
+  margin-bottom: $scale;
+  font-size: $scale-1;
+  font-weight: 400;
+  letter-spacing: .05rem;
+  color: #fff;
+  opacity: .15;
+  @include transition(opacity .3s, color .3s);
+  &:hover {
+    color: rgba(#fff, .7);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,60 @@
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+.site-logo {
+  display: inline-block;
+  margin-bottom: 5vh;
+}
+
+.hero {
+  position: relative;
+  background-color: #f4f4f4;
+  background-image: url("/assets/img/background.jpg");
+  background-size: cover;
+  background-position-y: top;
+  border-bottom: 1px solid transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, .5), rgba(#fff, 0)), linear-gradient(rgba(#fff,0),rgba(#fff,.5));
+  }
+}
+
+.wrapper--hero {
+  @include pad(10%);
+  position: relative;
+  z-index: 1;
+
+  @include media($medium) {
+    @include pad(12vh 2vw);
+  }
+}
+
+.lead {
+  font-weight: 400;
+}
+
+.subline {
+  display: none;
+
+  @include media($small) {
+    display: block;
+    line-height: 2;
+  }
+}
+
+/**
+ * The cursor animation
+ */
+#typer::after {
+  content: "|";
+  display: inline-block;
+  color: $brand-color;
+  @include animation(cursor .8s linear infinite);
+}

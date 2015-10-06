@@ -1,0 +1,63 @@
+// Typography
+$sans-serif: "Lato", sans-serif;
+$serif: "Georgia", serif;
+
+
+// Font Sizes
+$base-font-size: 1rem;
+$h1-font-size: $base-font-size * 2.25;
+$h2-font-size: $base-font-size * 2;
+$h3-font-size: $base-font-size * 1.5;
+$h4-font-size: $base-font-size * 1.25;
+$h5-font-size: $base-font-size * 1.15;
+$h6-font-size: $base-font-size;
+
+
+// Line height
+$base-line-height: 1.6;
+$header-line-height: 1.25;
+
+
+// Other Sizes
+$base-spacing: $base-line-height * 1rem;
+$base-z-index: 0;
+
+
+// Global sizing using Modular Scale with the perfect fourth [1.333] ratio
+$modular-scale-base: 1rem;
+$scale-4: modular-scale(-4);
+$scale-3: modular-scale(-3);
+$scale-2: modular-scale(-2);
+$scale-1: modular-scale(-1);
+$scale: modular-scale(0);
+$scale1: modular-scale(1);
+$scale2: modular-scale(2);
+$scale3: modular-scale(3);
+$scale4: modular-scale(4);
+$scale5: modular-scale(5);
+$scale6: modular-scale(6);
+$scale7: modular-scale(7);
+$scale8: modular-scale(8);
+$scale9: modular-scale(9);
+$scale10: modular-scale(10);
+$scale11: modular-scale(11);
+$scale12: modular-scale(12);
+
+
+// Colors
+$blue: #0073c2;
+$gray: #acafb7;
+$dark-gray: rgba(black, .8);
+$dark-overlay: rgba(23, 26, 34, .93);
+
+// Branding Colors
+$brand-color: #f7ca18;
+$brand-black: #0f1419;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$base-accent-color: $blue;
+
+// Link Colors
+$base-link-color: darken($blue, 5);
+$hover-link-color: black;

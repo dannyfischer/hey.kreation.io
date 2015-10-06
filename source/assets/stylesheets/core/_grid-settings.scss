@@ -1,0 +1,17 @@
+@import "neat-helpers";
+
+// Dimensions
+$max-width: 40rem;
+$min-height: 50rem;
+
+// Breakpoints
+$small: 480px;
+$medium: 640px;
+$large: 1024px;
+
+// Prefix Settings
+$prefix-for-webkit: true;
+$prefix-for-mozilla: false;
+$prefix-for-microsoft: false;
+$prefix-for-opera: false;
+$prefix-for-spec: true;

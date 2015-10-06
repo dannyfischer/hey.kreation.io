@@ -1,0 +1,29 @@
+headline: Wir sind Designer &amp; Entwickler.<br>Eine Community.
+
+subline: Wir sprechen &uuml;ber <span id="typer">Technologie.</span>
+
+button: Die <strong>Community</strong> &rarr;
+
+about_title: Warum ein Forum?
+
+about_more: Im deutschsprachigen Raum gab es keine gute Plattform für uns.<br>Wir haben nachgesehen und versuchen jetzt etwas.
+
+sections:
+  - title: Wir sind Vielseitig
+    symbol: sides
+    description: Egal ob Produkt Designer, Front-/ Back-End / iOS Entwickler, Experte oder Anfänger, wir wollen jedem interessante und aktuelle Themen bieten. Wo die Reise hingeht, entscheidet die Community.
+
+  - title: Digitaler Tellerrand
+    symbol: diamond
+    description: Es wird immer wichtiger über den Tellerrand zu schauen und die eigenen “Soft Skills” zu erweitern. Wir stehen hinter Interdisziplinarität und Erfahrungsaustausch zwischen den Disziplinen.
+
+  - title: Mehr als “Nice”
+    symbol: community
+    description: Eine Liste mit Links und “Nice” Kommentaren? Nein, wir wollen engagierende Unterhaltungen und Diskussionen führen. Die Themen sind so vielseitig wie die Leute, die sie starten.
+
+  - title: <small>Forum?</small> Forum!
+    symbol: wave
+    description: Es gibt zwar viele Kommunikations-Tools und Wege, aber wir finden, ein Forum - wie schon damals<small>&trade;</small> - eignet sich für fokussierte, nachverfolgbare Gespräche besser. Wir wollen nichts ersetzen, sondern ergänzen.
+
+
+button_footer: Okay, <strong>los geht’s</strong> &rarr;

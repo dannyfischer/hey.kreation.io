@@ -1,0 +1,175 @@
+/**
+ * Community Module
+ * ----------------
+ * Styles used by the React Community Module
+ * https://github.com/DannyFischer/react-community-module
+ */
+
+/*------------------------------------*\
+    #COMMUNITY-WRAPPER
+\*------------------------------------*/
+
+.part--community {
+  background: linear-gradient(to bottom, #040404, tint($brand-black, 5%));
+  border-bottom: 2px solid #000;
+}
+
+
+
+/*------------------------------------*\
+    #COMMUNITY-TOPIC-LIST
+\*------------------------------------*/
+
+.topic-list {
+  @include clearfix;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: $scale4;
+  text-shadow: 0 1px 0 #000;
+
+  &__item {
+    @include media($medium) {
+      @include span-columns(5.5);
+      @include omega(2n);
+      &:nth-of-type(even) {
+        @include shift(1);
+      }
+    }
+
+    padding: $scale2 0;
+    font-size: $scale;
+    text-align: center;
+    @include transition(background-color .2s);
+
+    &:hover .topic-list__linked {
+      color: rgba(#fff, .95);
+      border-bottom-color: $brand-color;
+    }
+  }
+
+  &__linked {
+    display: inline;
+    margin-bottom: $scale;
+    padding-bottom: 2px;
+    color: #a1a1a3;
+    border-bottom: 1px solid transparent;
+    @include transition(border-bottom-color .2s, color .2s);
+
+    &:hover {
+      border-width: 2px;
+    }
+
+    &::after {
+      content: "";
+      height: 1px;
+      width: 100%;
+      display: block;
+      margin: $scale 0;
+      @include background(radial-gradient(rgba(white, .1), transparent));
+    }
+  }
+
+  &__avatar {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-right: $scale-4;
+    vertical-align: middle;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+
+  &__author {
+    display: inline-block;
+    font-size: $scale-1;
+    color: #a1a1a3;
+    letter-spacing: .03rem;
+  }
+}
+
+
+
+/*------------------------------------*\
+    #COMMUNITY-TAB-NAVIGATION
+\*------------------------------------*/
+
+.tab-navigation {
+  color: #000;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ededed;
+  box-shadow: 0 8px 11px -13px #000;
+}
+
+.tab-list {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+  &__item {
+    padding: $scale 3vw;
+    margin-top: -1px;
+    display: inline-block;
+    font-size: $scale-1;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+
+    @include media($medium) {
+      padding: $scale-1 2.8rem;
+    }
+
+    &:hover {
+      background-color: #ededed;
+    }
+
+    &--active,
+    &--active:hover {
+      font-weight: 400;
+      color: $brand-color;
+      background-color: #040404;
+    }
+
+    &-sub {
+      margin-left: .3rem;
+      font-weight: 300;
+    }
+  }
+}
+
+
+
+/*------------------------------------*\
+    #COMMUNITY-TAB-ANIMATION
+\*------------------------------------*/
+
+/**
+ * ReactCSSTransitionGroup specific
+ */
+
+.fade-enter {
+  opacity: .01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.fade-appear {
+  opacity: .01;
+  transition: opacity .5s;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+}
+
+.fade-leave {
+  opacity: 1;
+  transition: opacity .5s;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: .01;
+}

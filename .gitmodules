@@ -1,0 +1,5 @@
+[submodule "source/assets/js"]
+	path = source/assets/js
+	url = https://DannyFischer@github.com/DannyFischer/react-community-module
+	update = checkout
+	fetchRecurseSubmodules = true

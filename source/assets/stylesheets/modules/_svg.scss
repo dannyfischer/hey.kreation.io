@@ -1,0 +1,39 @@
+/*------------------------------------*\
+#SVG ICONS
+\*------------------------------------*/
+
+.icon {
+  fill: currentColor;
+
+  &--category {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    fill: rgba(165, 165, 165, .045);
+    @include media($medium) {
+      display: block;
+    }
+  }
+
+  &--logo {
+    width: rem(140px);
+    height: rem(33px);
+
+    &-square {
+      display: block;
+      width: rem(52px);
+      height: rem(52px);
+      margin: 0 auto;
+    }
+  }
+
+  &--self {
+    width: $scale;
+    height: $scale;
+    margin: 0 .25rem;
+    vertical-align: sub;
+    fill: #000;
+  }
+}

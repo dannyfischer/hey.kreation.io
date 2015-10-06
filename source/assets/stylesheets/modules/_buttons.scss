@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+.button {
+  @include transition(color .3s);
+  display: inline-block;
+  padding: $scale-3 1rem;
+  margin-top: 5vh;
+  color: $brand-color;
+  font-size: $scale-1;
+  text-transform: uppercase;
+  letter-spacing: .07rem;
+  background-color: $brand-black;
+  border-radius: 25px;
+
+  &:hover {
+    color: white;
+  }
+
+  &--footer {
+    margin: 0 0 1px;
+  }
+}
