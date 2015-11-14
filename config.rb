@@ -16,12 +16,6 @@ ignore 'assets/js/node_modules/*'
 ignore 'assets/js/webpack.config.js'
 ignore /assets\/js\/(?!app.js).*\./
 
-after_configuration do
-  sprockets.append_path File.dirname(::React::Source.bundled_path_for('webpack.production.js'))
-end
-
-activate :react
-
 # Configure production build
 configure :build do
   activate :minify_css

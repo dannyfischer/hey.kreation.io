@@ -15,7 +15,6 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw]
 
 gem 'bourbon'
 gem 'neat'
-gem 'middleman-react'
 gem 'middleman-minify-html'
 gem 'middleman-inliner'
 gem 'image_optim'
