@@ -33,6 +33,5 @@ end
 # Deploy to GitHub Pages branch
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.remote = 'GitHub'
   deploy.commit_message = 'Site updated to ' << `git log --pretty="%h" -n1`
 end
